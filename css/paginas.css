@@ -1,0 +1,174 @@
+/* Links dos cards */
+.card{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove o azul dos links */
+.card:visited{
+    color: inherit;
+}
+
+.card:hover{
+    color: inherit;
+}
+body.pagina-interna header{
+    background: #000;
+}
+
+.banner-aulas{
+    text-align:center;
+    padding:140px 20px 70px;
+}
+
+.banner-aulas h1{
+    font-size:52px;
+    color:#ff7a00;
+}
+
+.banner-aulas p{
+    color:#ddd;
+    margin-top:15px;
+}
+
+.aulas{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:45px;
+    padding-bottom:80px;
+}
+
+.aula-card{
+    background:#1b1b1b;
+    border:2px solid #ff7a00;
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+    transition:.3s;
+}
+
+.aula-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 30px rgba(255,122,0,.35);
+}
+
+.aula-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.tag{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:#ff7a00;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.aula-card h2{
+    padding:25px 30px 10px;
+    color:#ff7a00;
+}
+
+.categoria{
+    padding:0 30px;
+    color:#fff;
+    font-weight:600;
+}
+
+.aula-card h3{
+    padding:25px 30px 10px;
+    color:#fff;
+}
+
+.aula-card ul{
+    padding:0 50px;
+    color:#ddd;
+}
+
+.aula-card li{
+    margin:12px 0;
+}
+
+.aula-card p{
+    padding:0 30px 20px;
+}
+
+.btn-aula{
+    display:inline-block;
+    margin:25px 30px 35px;
+    padding:14px 28px;
+    background:#ff7a00;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-aula:hover{
+    background:#ff9100;
+}
+
+@media(max-width:768px){
+
+.aula-card img{
+    height:220px;
+}
+
+.banner-aulas h1{
+    font-size:38px;
+}
+
+.tag{
+    font-size:11px;
+    padding:6px 14px;
+}
+
+}
+.zumba{
+    border:3px solid #ff7a00;
+}
+
+.jump{
+    border:3px solid #32CD32;
+}
+
+.bodyjump{
+    border:3px solid #2196F3;
+}
+
+.funcional{
+    border:3px solid #9C27B0;
+}
+
+.hitmix{
+    border:3px solid #F44336;
+}
+.zumba:hover{
+    box-shadow:0 0 30px rgba(255,122,0,.45);
+}
+
+.jump:hover{
+    box-shadow:0 0 30px rgba(50,205,50,.45);
+}
+
+.bodyjump:hover{
+    box-shadow:0 0 30px rgba(33,150,243,.45);
+}
+
+.funcional:hover{
+    box-shadow:0 0 30px rgba(156,39,176,.45);
+}
+
+.hitmix:hover{
+    box-shadow:0 0 30px rgba(244,67,54,.45);
+}
