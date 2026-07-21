@@ -293,23 +293,23 @@ nav ul li a{
 }
 
 /* ==========================
-   GALERIA
+   Equipamentos
 ========================== */
 
-#galeria h2{
+#equipamentos h2{
     text-align:center;
     color:#ff7b00;
     font-size:42px;
     margin-bottom:50px;
 }
 
-.galeria{
+.equipamentos{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:20px;
 }
 
-.galeria img{
+.equipamentos img{
     width:100%;
     height:280px;
     object-fit:cover;
@@ -317,7 +317,7 @@ nav ul li a{
     transition:.4s;
 }
 
-.galeria img:hover{
+.equipamentos img:hover{
     transform:scale(1.05);
 }
 
@@ -809,6 +809,18 @@ section{
         z-index:9999;
 
     }
+
+    .menu-mobile ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-mobile li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
     .menu-mobile.ativo{
         left:0;

@@ -40,16 +40,15 @@ body.pagina-interna header{
     gap:45px;
     padding-bottom:80px;
 }
-
 .aula-card{
-    background:#1b1b1b;
-    border:2px solid #ff7a00;
+    display:flex;
+    background:#1f1f1f;
     border-radius:20px;
     overflow:hidden;
-    position:relative;
-    transition:.3s;
-}
+    margin:40px 0;
 
+    
+}
 .aula-card:hover{
     transform:translateY(-8px);
     box-shadow:0 0 30px rgba(255,122,0,.35);
@@ -57,10 +56,21 @@ body.pagina-interna header{
 
 .aula-card img{
     width:100%;
-    height:320px;
+    height: 380px;;
     object-fit:cover;
+    object-position:center top;
 }
 
+.aula-foto{
+    width:45%;
+}
+
+.aula-foto img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
 .tag{
     position:absolute;
     top:20px;
@@ -118,57 +128,69 @@ body.pagina-interna header{
     background:#ff9100;
 }
 
-@media(max-width:768px){
 
-.aula-card img{
-    height:220px;
-}
+/*               MOBILE                 */
 
-.banner-aulas h1{
-    font-size:38px;
-}
+@media (max-width:768px){
 
-.tag{
-    font-size:11px;
-    padding:6px 14px;
-}
+    .aula-card{
+        flex-direction:column;
+        width:95%;
+        margin:25px auto;
+        border-radius:18px;
+    }
 
-}
-.zumba{
-    border:3px solid #ff7a00;
-}
+    .aula-foto,
+    .aula-conteudo{
+        width:100%;
+    }
 
-.jump{
-    border:3px solid #32CD32;
-}
+    .aula-card img{
+        width:100%;
+        height:350px;
+        object-fit:cover;
+        object-position:center top;
+    }
 
-.bodyjump{
-    border:3px solid #2196F3;
-}
+    .banner-aulas h1{
+        font-size:38px;
+    }
 
-.funcional{
-    border:3px solid #9C27B0;
-}
+    .tag{
+        top:15px;
+        right:15px;
+        font-size:11px;
+        padding:6px 12px;
+    }
 
-.hitmix{
-    border:3px solid #F44336;
-}
-.zumba:hover{
-    box-shadow:0 0 30px rgba(255,122,0,.45);
-}
+    .aula-card h2{
+        font-size:28px;
+        padding:20px 20px 10px;
+    }
 
-.jump:hover{
-    box-shadow:0 0 30px rgba(50,205,50,.45);
-}
+    .categoria{
+        padding:0 20px;
+        font-size:18px;
+    }
 
-.bodyjump:hover{
-    box-shadow:0 0 30px rgba(33,150,243,.45);
-}
+    .aula-card h3{
+        padding:20px 20px 10px;
+    }
 
-.funcional:hover{
-    box-shadow:0 0 30px rgba(156,39,176,.45);
-}
+    .aula-card p,
+    .aula-card ul{
+        padding:0 20px;
+    }
 
-.hitmix:hover{
-    box-shadow:0 0 30px rgba(244,67,54,.45);
+    .aula-card li{
+        margin:10px 0;
+        font-size:16px;
+    }
+
+    .btn-aula{
+        width:calc(100% - 40px);
+        margin:25px 20px;
+        text-align:center;
+    }
+
 }
