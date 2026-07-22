@@ -1,553 +1,659 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" href="logo\1784234903025.png">
 
-<title>Esther do Nascimento Personal Trainer</title>
+    <title>Somar FITNESS | Academia em Búzios</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css\style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
-
 <body>
 
-<header>
+<header id="header">
 
-<div class="logo">
-    ESTHER<span>.</span>
-</div>
+    <!-- Logo -->
+    <a href="#" class="logo">
+        <img src="logo\image.png" alt="Somar Fitness">
+    </a>
 
-<!-- BOTÃO HAMBÚRGUER -->
-<div class="menu-toggle" id="abrirMenu">
-    <i class="fa-solid fa-bars"></i>
-</div>
+    <!-- Menu do PC -->
+    <nav>
+
+        <a href="#">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#planos">Planos</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+
+    </nav>
+
+    <!-- Redes sociais -->
+    <div class="social">
+
+        <a href="https://instagram.com/somarfitness_bz" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://wa.me/5522999978030" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+    <!-- Botão do celular -->
+    <i class="fas fa-bars menu-toggle" id="menuToggle"></i>
+
+</header>
+
+<!-- Overlay -->
+<div class="fundo-menu" id="fundoMenu"></div>
 
 <!-- Menu Mobile -->
 <div class="menu-mobile" id="menuMobile">
 
     <div class="menu-mobile-topo">
 
-        
-       <div class="logo">
-           ESTHER<span>.</span>
-       </div>
+        <img src="logo\image.png" alt="Somar Fitness">
 
         <i class="fas fa-times fechar" id="fecharMenu"></i>
 
     </div>
 
-    <a href="#home">Início</a>
+    <a href="#">Início</a>
     <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
+    <a href="#diferenciais">Diferenciais</a>
     <a href="#planos">Planos</a>
-    <a href="#resultados">Resultados</a>
-    <a href="#depoimentos">Depoimentos</a>
+    
     <a href="#contato">Contato</a>
 
-
-    <a href="https://wa.me/5522988145742?text=Olá! Gostaria de agendar uma aula." class="btn-menu" target="_blank">
+    <a href="https://wa.me/5522999978030?text=Olá! Gostaria de agendar uma aula." class="btn-menu" target="_blank">
         Agendar Aula
     </a>
-</div>
 
-<nav>
+    <div class="menu-footer">
 
-    <a href="#home">Início</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#planos">Planos</a>
-    <a href="#resultados">Resultados</a>
-    <a href="#depoimentos">Depoimentos</a>
-    <a href="#contato">Contato</a>
+        <p><i class="fas fa-map-marker-alt"></i> Búzios - RJ</p>
+        <p><i class="fab fa-instagram"></i> @somarfitness_bz</p>
+        <p><i class="fab fa-whatsapp"></i> (22) 99997-8030</p>
 
-</nav>
-
-<a class="btn-header" href="#">
-Agendar
-</a>
-
-</header>
-
-<section class="hero" id="home">
-
-<div class="hero-text">
-
-<span class="tag">
-PERSONAL TRAINER
-</span>
-
-<h1>
-
-Transforme seu corpo e sua saúde com acompanhamento profissional.
-
-</h1>
-
-<p>
-
-Treinos personalizados para emagrecimento,
-hipertrofia, condicionamento físico e qualidade
-de vida.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="https://wa.me/5522988145742?text=Olá! Gostaria de agendar uma aula." class="btn-primary">
-
-Agendar Avaliação
-
-</a>
-
+    </div>
 
 </div>
 
-<div class="numbers">
+<div class="overlay"></div>
+<section class="hero">
 
-<div>
+    <div class="overlay"></div>
 
-<h2>+20</h2>
+    <div class="conteudo">
 
-<span>Alunos</span>
+        <h1>SOMAR FITNESS</h1>
 
+        <h2>Treine forte. Evolua todos os dias.</h2>
+
+        <p>
+            A academia ideal para quem busca saúde,
+            qualidade de vida e resultados.
+        </p>
+
+        <div class="botoes">
+
+            <a href="https://wa.me/5522999978030?text=Olá! Gostaria de agendar uma aula." target="_blank" class="btn">
+                Agendar Aula
+            </a>
+
+            <a href="#sobre" class="btn2">
+                Conheça a Academia
+            </a>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<section class="parceiros">
+
+    <div class="slider">
+
+        <div class="slide-track">
+
+            <div class="slide"><img src="logo\Logo_wellhub.png" alt="Wellhub"></div>
+            <div class="slide"><img src="logo\1784324765676.png" alt="TotalPass"></div>
+            <div class="slide"><img src="logo\nutri.png" alt="Nutricionista"></div>
+            <div class="slide"><img src="logo\fisio.png" alt="Fisioterapeuta"></div>
+
+            <!-- Duplicadas para o efeito infinito -->
+
+            <div class="slide"><img src="logo\Logo_wellhub.png" alt="Wellhub"></div>
+            <div class="slide"><img src="logo\1784324765676.png" alt="TotalPass"></div>
+            <div class="slide"><img src="logo\nutri.png" alt="Nutricionista"></div>
+            <div class="slide"><img src="logo\fisio.png" alt="Fisioterapeuta"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="divisor">
+    <span></span>
+
+    <div class="icone">
+        <i class="fa-solid fa-dumbbell"></i>
+    </div>
+
+    <span></span>
+</div>
+<section id="sobre">
+
+    <div class="container">
+
+        <div class="sobre-container">
+
+            <div class="sobre-texto">
+
+                <h2>Sobre a Somar Fitness</h2>
+
+                <p>
+                    A Somar Fitness é uma academia comprometida em oferecer um ambiente acolhedor, organizado e preparado para atender pessoas de todas as idades e objetivos.
+
+                    <br><br>
+
+                    Seja para emagrecer, ganhar massa muscular, melhorar o condicionamento físico ou cuidar da saúde, aqui você encontra um espaço ideal para evoluir no seu ritmo e conquistar seus objetivos com confiança.
+                </p>
+
+            </div>
+
+            <div class="numeros-sobre">
+
+                <div class="numero">
+                    <h3 id="contador-alunos">0</h3>
+                    <p>Alunos</p>
+                </div>
+
+                <div class="numero">
+                    <h3 id="contador-anos">0</h3>
+                    <p>Anos de história</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="divisor">
+    <span></span>
+
+    <div class="icone">
+        <i class="fa-solid fa-dumbbell"></i>
+    </div>
+
+    <span></span>
 </div>
 
-<div>
 
-<h2>1</h2>
+<section id="diferenciais">
 
-<span>Ano</span>
+<h2>Nossos Diferenciais</h2>
 
-</div>
+<div class="cards">
 
-<div>
+    <a href="paginas/aulas.html" class="card">
+        <i class="fa-solid fa-people-group"></i>
+        <h3>Aulas Coletivas</h3>
+        <p>Treinos em grupos para motivar e alcançar seus objetivos.</p>
+    </a>
 
-<h2>100%</h2>
+    <a href="paginas/equipamentos.html" class="card">
+        <i class="fas fa-dumbbell"></i>
+        <h3>Equipamentos</h3>
+        <p>Estrutura moderna para todos os tipos de treino.</p>
+    </a>
 
-<span>Personalizado</span>
+    <a href="paginas/profissionais.html" class="card">
+        <i class="fas fa-user-check"></i>
+        <h3>Profissionais</h3>
+        <p>Equipe qualificada para acompanhar sua evolução.</p>
+    </a>
 
-</div>
-
-</div>
-
-</div>
-
-<div class="hero-image">
-
-<img src="img/personal.png">
+    <a href="paginas/vida.html" class="card">
+        <i class="fas fa-heart"></i>
+        <h3>Qualidade de Vida</h3>
+        <p>Muito mais saúde para você e sua família.</p>
+    </a>
 
 </div>
 
 </section>
 
-<section class="sobre" id="sobre">
+<div class="divisor">
+    <span></span>
 
-<div class="sobre-img">
+    <div class="icone">
+        <i class="fa-solid fa-dumbbell"></i>
+    </div>
 
-<img src="img/sobre.jpg">
+    <span></span>
+</div>
+
+<section id="planos">
+
+    <h2 class="titulo-planos">Nossos Planos</h2>
+
+    <p class="subtitulo-planos">
+        Escolha o plano ideal para começar sua evolução.
+    </p>
+
+    <div class="planos">
+
+        <!-- Cards -->
+
+    </div>
+
+</section>
+
+<div class="planos">
+
+    <div class="plano">
+        <h3>Plano Mensal</h3>
+
+        <div class="preco">
+            R$ 120,00
+            <span>
+                /mês</span>
+        </div>
+
+        <ul>
+            <li>✔ Acesso à musculação</li>
+            <li>✔ Professores qualificados</li>
+            <li>✔ Aulas coletivas*</li>
+        </ul>
+
+        <a href="https://wa.me/5522999978030?text=Olá! Gostaria de me matricular no plano mensal." target="_blank">
+            Matricule-se
+        </a>
+    </div>
+
+    <div class="plano destaque">
+
+        <span class="badge">MAIS ESCOLHIDO</span>
+
+        <h3>Plano Bimestral</h3>
+
+        <div class="preco">
+            R$ 230,00
+            
+            <span>
+                   /2 meses</span>
+        </div>
+
+        <ul>
+            <li>✔ Melhor custo-benefício</li>
+            <li>✔ Acesso à musculação</li>
+            <li>✔ Aulas coletivas*</li>
+        </ul>
+
+        <a href="https://wa.me/5522999978030?text=Olá! Gostaria de me matricular no plano bimestral." target="_blank">
+            Matricule-se
+        </a>
+
+    </div>
+
+    <div class="plano">
+
+        <h3>Plano Trimestral</h3>
+
+        <div class="preco">
+            R$ 330,00
+            <span>/3 meses</span>
+        </div>
+
+        <ul>
+            <li>✔ Economia maior</li>
+            <li>✔ Acesso completo</li>
+            <li>✔ Aulas coletivas*</li>
+        </ul>
+
+        <a href="https://wa.me/5522999978030?text=Olá! Gostaria de me matricular no plano trimestral." target="_blank">
+            Matricule-se
+        </a>
+
+    </div>
+
+    <div class="plano">
+
+        <h3>Plano Semestral</h3>
+
+        <div class="preco">
+            R$ 650,00
+            <span>/6 meses</span>
+        </div>
+
+        <ul>
+            <li>✔ Melhor valor</li>
+            <li>✔ Acesso completo</li>
+            <li>✔ Aulas coletivas*</li>
+        </ul>
+
+        <a href="https://wa.me/5522999978030?text=Olá! Gostaria de me matricular no plano semestral." target="_blank">
+            Matricule-se
+        </a>
+
+    </div>
+</div>
+
+<div class="extras-planos">
+
+    <div class="plano promocional">
+
+        <h3>Horario Promocional</h3>
+
+        <div class="preco">
+            R$ 90,00
+      
+        </div>
+        <ul>
+            <li>✔ De 12:00 às 15:00</li>
+            <li>✔ Somente 1 acesso no dia</li>
+            
+        </ul>
+
+        <a href="https://wa.me/5522999978030?text=Olá! Gostaria de me matricular no horário promocional." target="_blank">
+            Matricule-se
+        </a>
+
+    </div>
+
+    <div class="plano avaliacao">
+
+        <h3>Avaliação Física</h3>
+
+        <div class="preco">
+            R$ 45,00
+      
+        </div>
+
+<p class="descrição">Agende já a sua avaliação!</p>
+
+        <ul>
+            <li>✔ Avaliação completa do seu corpo</li>
+            <li>✔ Bioimpedância</li>
+            <li>✔ Medidas corporais*</li>
+        </ul>
+
+        <a href="https://wa.me/5522999978030?text=Olá! Gostaria de agendar uma avaliação física." target="_blank">
+            Agendar Avaliação
+        </a>
+
+    </div>
 
 </div>
 
-<div class="sobre-texto">
+<div class="divisor">
+    <span></span>
 
-<span>
-SOBRE MIM
-</span>
+    <div class="icone">
+        <i class="fa-solid fa-dumbbell"></i>
+    </div>
 
-<h2>
+    <span></span>
+</div>
 
-Muito prazer!
+<section id="diarias">
 
-Esther Nascimento, Personal Trainer.
+    <h2 class="titulo-planos">Diárias</h2>
 
-</h2>
+    <p class="subtitulo-planos">
+        Está em Búzios? Treine sem compromisso.
+    </p>
 
-<p>
+    <div class="diarias">
 
-Sou Personal Trainer formada em Educação Física,
-especialista em treinamento para hipertrofia,
-emagrecimento e condicionamento físico.
+        <div class="diaria">
+            <h3>Diária</h3>
 
-Meu objetivo é ajudar cada aluno a conquistar
-resultados de forma segura, eficiente e duradoura.
+            <div class="preco">
+                R$ 20,00
+            </div>
 
-</p>
+            <p>Acesso livre à academia durante 1 dia.</p>
+
+            <a href="https://wa.me/5522999978030?text=Olá! Gostaria de agendar uma aula." target="_blank">
+                Quero Treinar
+            </a>
+        </div>
+
+        <div class="diaria">
+            <h3>Pacote 3 Dias</h3>
+
+            <div class="preco">
+                R$ 45,00
+            </div>
+
+            <p>Ideal para quem está de passagem por Búzios.</p>
+
+            <a href="https://wa.me/5522999978030?text=Olá! Gostaria de agendar três aula." target="_blank">
+                Quero Treinar
+            </a>
+
+        </div>
+
+        <div class="diaria">
+            <h3>Pacote 5 Dias</h3>
+
+            <div class="preco">
+                R$ 50,00
+            </div>
+
+            <p>Perfeito para quem quer treinar durante a semana.</p>
+
+            <a href="https://wa.me/5522999978030?text=Olá! Gostaria de agendar cinco aulas." target="_blank">
+                Quero Treinar
+            </a>
+
+        </div>
+
+
+
+        <div class="diaria destaque">
+
+            <span class="badge">RECOMENDADO</span>
+
+            <h3>Pacote 7 Dias</h3>
+
+            <div class="preco">
+                R$ 60,00
+            </div>
+
+            <p>Ideal para turistas e visitantes.</p>
+
+            <a href="https://wa.me/5522999978030?text=Olá! Gostaria de agendar sete aulas.  " target="_blank">
+                Quero Treinar
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+ 
+<div class="divisor">
+    <span></span>
+
+    <div class="icone">
+        <i class="fa-solid fa-dumbbell"></i>
+    </div>
+
+    <span></span>
+</div>
+
+
+<section id="avaliacoes">
+
+    <h2>Avaliações</h2>
+
+    <p class="sub-avaliacoes">
+        Veja o que nossos alunos dizem sobre a Somar Fitness.
+    </p>
+
+    <div class="avaliacoes-container">
+
+        <!-- Lado esquerdo -->
+        <div class="avaliacoes-cards esquerda">
+
+            <div class="card-avaliacao">
+                <div class="estrelas">★★★★★</div>
+
+                <p>
+                    "Melhor academia q ja treinei!!!! RECOMENDO"
+                </p>
+
+                <span>Lázaro Felipe</span>
+            </div>
+
+            <div class="card-avaliacao">
+                <div class="estrelas">★★★★★</div>
+
+                <p>
+                    "Excelente academia, estrutura, localização e tudo!! É pra quem gosta de um local de qualidade"
+                </p>
+
+                <span>Gabriel Arraes</span>
+            </div>
+
+        </div>
+
+        <!-- Centro -->
+        <div class="contador-google">
+
+            <div class="nota">
+                4.9
+            </div>
+
+            <div class="estrelas-grande">
+                ★★★★★
+            </div>
+
+            <h3 id="contador">0</h3>
+
+            <p>Avaliações no Google</p>
+
+        </div>
+
+        <!-- Lado direito -->
+        <div class="avaliacoes-cards direita">
+
+            <div class="card-avaliacao">
+                <div class="estrelas">★★★★★</div>
+
+                <p>
+                    "academia maravilhosa!
+atendimento atencioso, equipamentos limpos e bem cuidados, um ambiente muito agradável!!"
+                </p>
+
+                <span>Lorena Souza</span>
+            </div>
+
+            <div class="card-avaliacao">
+                <div class="estrelas">★★★★★</div>
+
+                <p>
+                    "Muito bom o local e as regras sobre o local, amei treinar lá por conta do respeito"
+                </p>
+
+                <span>Maicon Jullyo de mello mendes</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+<div class="divisor">
+    <span></span>
+
+    <div class="icone">
+        <i class="fa-solid fa-dumbbell"></i>
+    </div>
+
+    <span></span>
+</div>
+
+
+
+<section id="contato">
+</div>
+
+<h2>Contato</h2>
 
 <div class="infos">
 
-<div>
+<p><i class="fab fa-whatsapp"></i> (22) 99997-8030</p>
 
-<i class="fa-solid fa-medal"></i>
+<p><i class="fab fa-instagram"></i> @somarfitness_bz</p>
 
-<p>
-CREF Ativo
-</p>
+<p><i class="far fa-clock"></i>
 
-</div>
-
-<div>
-
-<i class="fa-solid fa-dumbbell"></i>
-
-<p>
-Treinos Personalizados
-</p>
-
-</div>
-
-<div>
-
-<i class="fa-solid fa-heart"></i>
-
-<p>
-Qualidade de Vida
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="servicos" id="servicos">
-
-<h2>
-
-Como posso te ajudar
-
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fa-solid fa-dumbbell"></i>
-
-<h3>
-
-Hipertrofia
-
-</h3>
-
-<p>
-
-Treinos focados em ganho de massa muscular.
+Segunda à Sexta - 06:00 às 22:00<br>
+Sábado - 08:00 às 14:00<br>
+Domingo - 08:00 às 12:00
 
 </p>
 
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-fire"></i>
-
-<h3>
-
-Emagrecimento
-
-</h3>
-
-<p>
-
-Treinos para acelerar a queima de gordura.
-
-</p>
+<i class="fas fa-map-marker-alt"></i> Rua Justiniano de Souza, 118 - Sobre Loja - Rasa - Búzios/RJ</p>
 
 </div>
 
-<div class="card">
+<div class="mapa">
 
-<i class="fa-solid fa-person-running"></i>
+    <iframe
+        src="https://www.google.com/maps?q=R.%20Justiniano%20de%20Souza,%20118%20-%20Rasa,%20Armação%20dos%20Búzios%20-%20RJ&output=embed"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
 
-<h3>
-
-Condicionamento
-
-</h3>
-
-<p>
-
-Mais resistência, saúde e disposição.
-
-</p>
+    
 
 </div>
-
-<div class="card">
-
-<i class="fa-solid fa-mobile-screen"></i>
-
-<h3>
-
-Consultoria Online
-
-</h3>
-
-<p>
-
-Treine de qualquer lugar com acompanhamento.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- PLANOS -->
- 
-<section class="planos" id="planos">
-
-<h2>Planos e Preços</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Plano Básico</h3>
-
-<p>
-
-Treino personalizado 1x por semana.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Plano Intermediário</h3>
-
-<p>
-
-Treino personalizado 2x por semana.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Plano Avançado</h3>
-
-<p>
-
-Treino personalizado 3x por semana.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-<!-- RESULTADOS -->
-
-<section class="resultados" id="resultados">
-
-<div class="titulo">
-
-<span>RESULTADOS</span>
-
-<h2>Transformações Reais</h2>
-
-<p>
-Cada aluno possui um objetivo diferente.
-Veja alguns resultados obtidos através de
-treinos personalizados.
-</p>
-
-</div>
-
-<div class="galeria">
-
-<div class="resultado-card">
-
-<img src="img/resultado1.jpg" alt="Resultado">
-
-<div class="overlay">
-
-<h3>Hipertrofia</h3>
-
-<p>6 Meses</p>
-
-</div>
-
-</div>
-
-<div class="resultado-card">
-
-<img src="img/resultado2.jpg" alt="Resultado">
-
-<div class="overlay">
-
-<h3>Emagrecimento</h3>
-
-<p>-18kg</p>
-
-</div>
-
-</div>
-
-<div class="resultado-card">
-
-<img src="img/resultado3.jpg" alt="Resultado">
-
-<div class="overlay">
-
-<h3>Definição</h3>
-
-<p>4 Meses</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- DEPOIMENTOS -->
-
-<section class="depoimentos" id="depoimentos">
-
-<div class="titulo">
-
-<span>AVALIAÇÕES</span>
-
-<h2>O que dizem meus alunos</h2>
-
-</div>
-
-<div class="depoimentos-container">
-
-<div class="depoimento">
-
-<div class="estrelas">
-
-★★★★★
-
-</div>
-
-<p>
-
-"Treinar com a Juliana mudou minha rotina.
-Perdi 12kg e ganhei muita disposição."
-
-</p>
-
-<h4>Lucas Oliveira</h4>
-
-</div>
-
-<div class="depoimento">
-
-<div class="estrelas">
-
-★★★★★
-
-</div>
-
-<p>
-
-"Excelente profissional.
-Os treinos são personalizados e os resultados apareceram rápido."
-
-</p>
-
-<h4>Mariana Souza</h4>
-
-</div>
-
-<div class="depoimento">
-
-<div class="estrelas">
-
-★★★★★
-
-</div>
-
-<p>
-
-"Nunca gostei de academia,
-mas hoje treinar virou um prazer."
-
-</p>
-
-<h4>Carlos Henrique</h4>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- CONTATO -->
-
-<section class="contato" id="contato">
-
-<h2>Entre em Contato</h2>
-
-<p>
-
-📱 (22) 98814-5742
-
-</p>
-
-<p>
-
-📸 @personal_esther_nascimento
-
-</p>
-
-<p>
-
-📍 Academia Exemplo
-
-</p>
 
 </section>
 
 <footer>
 
-<h3>
+<h3>Somar FITNESS</h3>
 
-Esther Nascimento Personal Trainer
-
-</h3>
-
-<p>
-
-Transformando vidas através do treinamento.
-
-</p>
-
-<p>
-
-© 2026 Todos os direitos reservados.
-
-</p>
+<p>© 2026 Todos os direitos reservados.</p>
 
 </footer>
 
-<script src="js\script.js"></script>
+<a href="https://wa.me/5522999978030" class="whats" target="_blank">
 
-<a href="https://wa.me/5522988145742" class="whatsapp" target="_blank">
-    <i class="fab fa-whatsapp"></i>
+<i class="fab fa-whatsapp"></i>
+
 </a>
 
-</body>
+<script src="js\script.js"></script>
 
+</body>
 </html>
