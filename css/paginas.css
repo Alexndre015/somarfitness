@@ -1,0 +1,751 @@
+/* Links dos cards */
+.card{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove o azul dos links */
+.card:visited{
+    color: inherit;
+}
+
+.card:hover{
+    color: inherit;
+}
+body.pagina-interna header{
+    background: #000;
+}
+
+.banner-aulas{
+    text-align:center;
+    padding:140px 20px 70px;
+}
+
+.banner-aulas h1{
+    font-size:52px;
+    color:#ff7a00;
+}
+
+.banner-aulas p{
+    color:#ddd;
+    margin-top:15px;
+}
+
+.aulas{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:45px;
+    padding-bottom:80px;
+}
+.aula-card{
+    display:flex;
+    background:#1f1f1f;
+    border-radius:20px;
+    overflow:hidden;
+    margin:40px 0;
+
+    
+}
+.aula-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 30px rgba(255,122,0,.35);
+}
+
+.aula-card img{
+    width:100%;
+    height: 380px;;
+    object-fit:cover;
+    object-position:center top;
+}
+
+.aula-foto{
+    width:45%;
+}
+
+.aula-foto img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+.tag{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:#ff7a00;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.aula-card h2{
+    padding:25px 30px 10px;
+    color:#ff7a00;
+}
+
+.categoria{
+    padding:0 30px;
+    color:#fff;
+    font-weight:600;
+}
+
+.aula-card h3{
+    padding:25px 30px 10px;
+    color:#fff;
+}
+
+.aula-card ul{
+    padding:0 50px;
+    color:#ddd;
+}
+
+.aula-card li{
+    margin:12px 0;
+}
+
+.aula-card p{
+    padding:0 30px 20px;
+}
+
+.btn-aula{
+    display:inline-block;
+    margin:25px 30px 35px;
+    padding:14px 28px;
+    background:#ff7a00;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-aula:hover{
+    background:#ff9100;
+}
+
+
+/*               MOBILE                 */
+
+@media (max-width:768px){
+
+    .aula-card{
+        flex-direction:column;
+        width:95%;
+        margin:25px auto;
+        border-radius:18px;
+    }
+
+    .aula-foto,
+    .aula-conteudo{
+        width:100%;
+    }
+
+    .aula-card img{
+        width:100%;
+        height:350px;
+        object-fit:cover;
+        object-position:center top;
+    }
+
+    .banner-aulas h1{
+        font-size:38px;
+    }
+
+    .tag{
+        top:15px;
+        right:15px;
+        font-size:11px;
+        padding:6px 12px;
+    }
+
+    .aula-card h2{
+        font-size:28px;
+        padding:20px 20px 10px;
+    }
+
+    .categoria{
+        padding:0 20px;
+        font-size:18px;
+    }
+
+    .aula-card h3{
+        padding:20px 20px 10px;
+    }
+
+    .aula-card p,
+    .aula-card ul{
+        padding:0 20px;
+    }
+
+    .aula-card li{
+        margin:10px 0;
+        font-size:16px;
+    }
+
+    .btn-aula{
+        width:calc(100% - 40px);
+        margin:25px 20px;
+        text-align:center;
+    }
+
+}
+/* ===================== */
+/* EQUIPAMENTOS */
+/* ===================== */
+
+.categoria-equipamentos{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:70px auto;
+
+}
+
+.categoria-equipamentos h2{
+
+    color:#ff7a00;
+
+    font-size:36px;
+
+    margin-bottom:15px;
+
+}
+
+.categoria-equipamentos p{
+
+    color:#ddd;
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+    line-height:1.8;
+
+}
+
+.galeria-equipamentos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+
+}
+
+.galeria-equipamentos img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.galeria-equipamentos img:hover{
+
+    transform:scale(1.04);
+
+    box-shadow:0 0 30px rgba(255,122,0,.35);
+
+}
+/* ========================================= */
+/* PÁGINA PARCEIROS */
+/* ========================================= */
+.banner-parceiro{
+    position: relative;
+    min-height: 80vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+        url("../logo/ANÚNCIOSTV.jpg") center/cover no-repeat;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 20px;
+}
+
+.banner-parceiro h1{
+    font-size:64px;
+    color:#ff7a00;
+    margin-bottom:20px;
+}
+
+.banner-parceiro p{
+    max-width:700px;
+    color:#fff;
+    font-size:22px;
+    line-height:1.7;
+    margin-bottom:40px;
+}
+
+/*=============================
+      VÍDEO
+==============================*/
+
+.video-publicidade{
+
+    width:90%;
+    max-width:950px;
+
+    margin:100px auto;
+
+    background:#181818;
+
+    border:2px solid #ff7a00;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 0 40px rgba(255,122,0,.15);
+
+}
+
+.video-publicidade h2{
+
+    color:#fff;
+
+    font-size:38px;
+
+    margin-bottom:35px;
+
+}
+
+.video-publicidade video{
+
+    width:100%;
+
+    border-radius:15px;
+
+}
+
+.video-publicidade p{
+
+    color:#bbb;
+
+    margin-top:20px;
+
+    font-size:17px;
+
+}
+
+
+
+/*=============================
+      VANTAGENS
+==============================*/
+
+.vantagens{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:120px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.vantagens div{
+
+    background:#1b1b1b;
+
+    border:2px solid #ff7a00;
+
+    border-radius:22px;
+
+    padding:45px 30px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.vantagens div:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px rgba(255,122,0,.35);
+
+}
+
+.vantagens i{
+
+    font-size:60px;
+
+    color:#ff7a00;
+
+    margin-bottom:25px;
+
+}
+
+.vantagens h3{
+
+    color:#fff;
+
+    font-size:25px;
+
+    margin-bottom:18px;
+
+}
+
+.vantagens p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+}
+
+
+
+/*=============================
+      COMO FUNCIONA
+==============================*/
+
+.como-funciona{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:140px auto;
+
+    text-align:center;
+
+}
+
+.como-funciona h2{
+
+    color:#ff7a00;
+
+    font-size:46px;
+
+    margin-bottom:70px;
+
+}
+
+.passos{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.passo{
+
+    width:220px;
+
+    background:#1b1b1b;
+
+    border:2px solid #ff7a00;
+
+    border-radius:22px;
+
+    padding:35px 25px;
+
+    transition:.35s;
+
+}
+
+.passo:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 30px rgba(255,122,0,.35);
+
+}
+
+.passo span{
+
+    width:65px;
+
+    height:65px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#ff7a00;
+
+    color:#fff;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+.passo h3{
+
+    color:#fff;
+
+    font-size:22px;
+
+}
+
+.seta{
+
+    font-size:38px;
+
+    color:#ff7a00;
+
+}
+
+
+
+/*=============================
+  POR QUE ANUNCIAR
+==============================*/
+
+.beneficios-anuncio{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:140px auto;
+
+    text-align:center;
+
+}
+
+.beneficios-anuncio h2{
+
+    color:#ff7a00;
+
+    font-size:44px;
+
+    margin-bottom:60px;
+
+}
+
+.beneficios-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.beneficio-card{
+
+    background:#1b1b1b;
+
+    border:2px solid #ff7a00;
+
+    border-radius:22px;
+
+    padding:45px 30px;
+
+    transition:.35s;
+
+}
+
+.beneficio-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 35px rgba(255,122,0,.35);
+
+}
+
+.beneficio-card i{
+
+    font-size:58px;
+
+    color:#ff7a00;
+
+    margin-bottom:25px;
+
+}
+
+.beneficio-card h3{
+
+    color:#fff;
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+}
+
+.beneficio-card p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+}
+
+
+
+/*=============================
+      CTA FINAL
+==============================*/
+
+.cta-final{
+
+    width:90%;
+    max-width:900px;
+
+    margin:150px auto;
+
+    text-align:center;
+
+}
+
+.cta-final h2{
+
+    color:#ff7a00;
+
+    font-size:52px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.cta-final p{
+
+    color:#d5d5d5;
+
+    font-size:20px;
+
+    margin-bottom:40px;
+
+}
+
+.cta-final a{
+
+    display:inline-block;
+
+    padding:18px 50px;
+
+    background:#ff7a00;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:14px;
+
+    font-size:19px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.cta-final a:hover{
+
+    background:#ff9100;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px rgba(255,122,0,.4);
+
+}
+
+
+
+/*=============================
+      MOBILE
+==============================*/
+
+@media(max-width:900px){
+
+.vantagens,
+.beneficios-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.passos{
+
+    flex-direction:column;
+
+}
+
+.seta{
+
+    transform:rotate(90deg);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.vantagens,
+.beneficios-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.video-publicidade{
+
+    padding:20px;
+
+}
+
+.video-publicidade h2{
+
+    font-size:28px;
+
+}
+
+.como-funciona h2,
+.beneficios-anuncio h2,
+.cta-final h2{
+
+    font-size:34px;
+
+}
+
+}
