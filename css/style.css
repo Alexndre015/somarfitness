@@ -794,7 +794,7 @@ section{
         position:fixed;
 
         top:0;
-        left:-100%;
+        right:-100%;
 
         width:85%;
         max-width:340px;
@@ -823,7 +823,7 @@ section{
 }
 
     .menu-mobile.ativo{
-        left:0;
+        right:0;
     }
 
     .menu-mobile-topo{
