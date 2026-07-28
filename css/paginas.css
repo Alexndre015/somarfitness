@@ -5,16 +5,7 @@
 }
 
 /* Remove o azul dos links */
-.card:visited{
-    color: inherit;
-}
 
-.card:hover{
-    color: inherit;
-}
-body.pagina-interna header{
-    background: #000;
-}
 
 .banner-aulas{
     text-align:center;
