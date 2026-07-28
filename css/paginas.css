@@ -745,9 +745,21 @@
       BANNER
 ==========================*/
 
-.banner-profissionais{
-    text-align:center;
-    padding:160px 20px 80px;
+.banner-equipe {
+    height: 600px;
+    background-image: url("../imagens/profissionais .png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
 }
 
 .banner-profissionais h1{
@@ -760,7 +772,7 @@
     max-width:700px;
     margin:auto;
     color:#ddd;
-    font-size:18px;
+    font-size:20px;
     line-height:1.8;
 }
 /*==========================
