@@ -772,44 +772,98 @@ body.pagina-interna header{
     font-size:18px;
     line-height:1.8;
 }
-
 /*==========================
-      PROFISSIONAIS
+        NOSSA EQUIPE
 ==========================*/
 
-.profissional{
-
-    width:90%;
+.equipe{
     max-width:1200px;
+    margin:100px auto;
+    padding:0 20px;
+}
 
-    margin:80px auto;
+.titulo-equipe{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.titulo-equipe h2{
+    font-size:3rem;
+    color:#ff7a00;
+    margin-bottom:15px;
+}
+
+.titulo-equipe p{
+    color:#cfcfcf;
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+}
+
+/*==========================
+        CARDS
+==========================*/
+
+.card-profissional{
 
     display:flex;
     align-items:center;
-    gap:70px;
+    gap:55px;
+
+    background:#171717;
+
+    border:1px solid rgba(255,122,0,.25);
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    padding:25px;
+
+    margin-bottom:45px;
+
+    transition:.35s;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.45);
+
+}
+.card-profissional{
+    display:flex;
+    flex-direction:row;
+}
+
+
+.card-profissional:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#ff7a00;
+
+    box-shadow:0 20px 45px rgba(255,122,0,.18);
 
 }
 
-.profissional.reverso{
+.card-profissional.reverso{
     flex-direction:row-reverse;
 }
 
 .foto-profissional{
-    flex:1;
+
+    flex:0 0 470px;
+
 }
 
 .foto-profissional img{
 
     width:100%;
-    border-radius:25px;
 
-    transition:.4s;
+    height:340px;
 
-}
+    object-fit:cover;
 
-.foto-profissional img:hover{
+    border-radius:18px;
 
-    transform:scale(1.03);
+    display:block;
 
 }
 
@@ -822,36 +876,106 @@ body.pagina-interna header{
 .cargo{
 
     color:#ff7a00;
+
+    font-size:.95rem;
+
     font-weight:700;
-    letter-spacing:2px;
+
+    letter-spacing:4px;
 
 }
 
-.info-profissional h2{
+.info-profissional h3{
 
-    margin:15px 0 25px;
-    font-size:42px;
+    font-size:3rem;
+
+    color:#fff;
+
+    margin:12px 0 15px;
+
+}
+
+.linha{
+
+    width:70px;
+
+    height:3px;
+
+    background:#ff7a00;
+
+    border-radius:30px;
+
+    margin-bottom:25px;
 
 }
 
 .info-profissional p{
 
-    color:#ccc;
+    color:#d6d6d6;
+
+    font-size:1.15rem;
+
     line-height:1.9;
+
+    max-width:520px;
+
     margin-bottom:35px;
 
 }
 
 /*==========================
-      VANTAGENS
+      BOTÃO
+==========================*/
+
+.btn-whatsapp{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#ff7a00;
+
+    color:#fff;
+
+    padding:15px 34px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.btn-whatsapp:hover{
+
+    background:#ff8f1f;
+
+    transform:translateY(-4px);
+
+}
+
+.btn-whatsapp i{
+
+    font-size:20px;
+
+}
+
+/*==========================
+     DIFERENCIAIS
 ==========================*/
 
 .vantagens-equipe{
 
-    width:90%;
-    max-width:1200px;
+    max-width:1300px;
 
-    margin:100px auto;
+    margin:120px auto;
+
+    padding:0 20px;
 
     text-align:center;
 
@@ -859,102 +983,233 @@ body.pagina-interna header{
 
 .vantagens-equipe h2{
 
-    font-size:40px;
     color:#fff;
 
-    margin-bottom:60px;
-
-}
-
-.cards-vantagens{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:30px;
-
-}
-
-.card-vantagem{
-
-    background:#1c1c1c;
-
-    border:2px solid #2d2d2d;
-
-    padding:40px;
-
-    border-radius:20px;
-
-    transition:.4s;
-
-}
-
-.card-vantagem:hover{
-
-    border-color:#ff7a00;
-
-    transform:translateY(-8px);
-
-}
-
-.card-vantagem i{
-
-    font-size:42px;
-    color:#ff7a00;
-
-    margin-bottom:20px;
-
-}
-
-.card-vantagem h3{
+    font-size:2.5rem;
 
     margin-bottom:15px;
 
 }
 
-.card-vantagem p{
+.linha-titulo{
 
-    color:#ccc;
-    line-height:1.8;
+    width:80px;
+
+    height:3px;
+
+    background:#ff7a00;
+
+    margin:0 auto 60px;
+
+}
+
+.grid-vantagens{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:35px;
+
+}
+
+.item-vantagem{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    text-align:left;
+
+}
+
+.item-vantagem i{
+
+    color:#ff7a00;
+
+    font-size:50px;
+
+    min-width:55px;
+
+}
+
+.item-vantagem h3{
+
+    color:#fff;
+
+    font-size:1.2rem;
+
+    margin-bottom:10px;
+
+}
+
+.item-vantagem p{
+
+    color:#d4d4d4;
+
+    line-height:1.7;
 
 }
 
 /*==========================
-      MOBILE
+        CTA
 ==========================*/
 
-@media(max-width:900px){
+.cta-equipe{
 
-.profissional,
-.profissional.reverso{
+    max-width:1200px;
 
-    flex-direction:column;
+    margin:120px auto;
 
-}
+    padding:35px 45px;
 
-.cards-vantagens{
+    background:#171717;
 
-    grid-template-columns:1fr;
+    border:1px solid rgba(255,122,0,.35);
 
-}
+    border-radius:22px;
 
-.banner-profissionais h1{
+    display:flex;
 
-    font-size:40px;
+    justify-content:space-between;
 
-}
+    align-items:center;
 
-.info-profissional h2{
-
-    font-size:34px;
+    gap:40px;
 
 }
 
-.cta-profissionais h2{
+.cta-esquerda{
 
-    font-size:32px;
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
 
 }
+
+.cta-esquerda i{
+
+    font-size:55px;
+
+    color:#ff7a00;
+
+}
+
+.cta-esquerda h3{
+
+    color:#fff;
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+}
+
+.cta-esquerda p{
+
+    color:#d4d4d4;
+
+    line-height:1.7;
+
+}
+
+.btn-cta{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:18px 38px;
+
+    background:#ff7a00;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.btn-cta:hover{
+
+    background:#ff8f1f;
+
+    transform:translateY(-4px);
+
+}
+
+/*==========================
+      RESPONSIVO
+==========================*/
+
+@media(max-width:980px){
+
+    .card-profissional,
+    .card-profissional.reverso{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .foto-profissional{
+
+        flex:unset;
+
+        width:100%;
+
+    }
+
+    .foto-profissional img{
+
+        height:300px;
+
+    }
+
+    .linha{
+
+        margin:20px auto;
+
+    }
+
+    .info-profissional p{
+
+        margin:auto auto 30px;
+
+    }
+
+    .grid-vantagens{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+    }
+
+    .cta-equipe{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .cta-esquerda{
+
+        flex-direction:column;
+
+    }
 
 }
