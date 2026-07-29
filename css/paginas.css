@@ -258,20 +258,23 @@
 /* ========================================= */
 .banner-parceiro{
     position: relative;
-    min-height: 80vh;
+    height: 100vh;
 
     background:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
-        url("../logo/ANÚNCIOSTV.jpg") center/cover no-repeat;
+        url("../logo/ANÚNCIOSTV.jpg") right/cover no-repeat;
+
+        
+
 
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    justify-content:flex-start;
+    align-items:flex-start;
 
-    text-align:center;
+    text-align:left;
 
-    padding:120px 20px;
+    padding:240px 40px;
 }
 
 .banner-parceiro h1{
@@ -286,6 +289,26 @@
     font-size:22px;
     line-height:1.7;
     margin-bottom:40px;
+}
+
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+  .banner-parceiro {
+    min-height: 60vh;              /* reduz altura */
+    background-position: top center; /* mostra parte superior da imagem */
+    background-size: auto 100%;  
+    padding: 260px 50px;            /* menos espaço interno */
+  }
+
+  .banner-parceiro h1 {
+    font-size: 36px;               /* título menor */
+  }
+
+  .banner-parceiro p {
+    font-size: 18px;               /* texto menor */
+    max-width: 100%;               /* ocupa toda largura */
+  }
 }
 
 /*=============================
@@ -768,7 +791,6 @@
     position: relative;
     z-index: 2;
 }
-
 .banner-profissionais h1{
     font-size:55px;
     color:#ff7a00;
