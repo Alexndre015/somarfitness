@@ -759,7 +759,14 @@
 .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0.496);
+}
+
+.banner-equipe h1,
+.banner-equipe p,
+.banner-equipe .btn{
+    position: relative;
+    z-index: 2;
 }
 
 .banner-profissionais h1{
@@ -1214,5 +1221,16 @@
         flex-direction:column;
 
     }
+
+}
+
+
+/* Mobile */
+@media (max-width:768px){
+
+    .banner-equipe{
+        background-position: 80% center;
+    }
+
 
 }
