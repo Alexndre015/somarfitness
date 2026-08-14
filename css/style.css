@@ -221,7 +221,7 @@ nav a:hover::after{
     text-align:center;
     color:#ff7b00;
     font-size:42px;
-}
+} 
 
 .cards{
     margin-top:60px;
@@ -231,19 +231,36 @@ nav a:hover::after{
 }
 
 .card{
-    background:#181818; 
-    padding:30px;
-    border-radius:18px;
 
-    border:2px solid transparent;
+    background:linear-gradient(180deg,#1d1d1d,#141414);
 
-    transition:.35s ease;
+    padding:35px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,122,0,.18);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.03);
+
+    transition:
+        transform .35s,
+        box-shadow .35s,
+        border-color .35s;
 
     cursor:pointer;
 
-    text-decoration: none;
-    color: inherit;
-    display: block;
+    color:inherit;
+
+    text-decoration:none;
+
+    display:block;
+
+    position:relative;
+
+    overflow:hidden;
+
 }
 
 .card:hover{
@@ -252,11 +269,14 @@ nav a:hover::after{
 
     border-color:#ff7a00;
 
-    box-shadow:0 20px 40px rgba(255,122,0,.25);
+    box-shadow:
+        0 22px 45px rgba(255,122,0,.20),
+        0 12px 25px rgba(0,0,0,.45);
 
 }
+.card i{
 
-.card i{  font-size:55px;
+    font-size:55px;
 
     color:#ff7a00;
 
@@ -264,7 +284,14 @@ nav a:hover::after{
 
     transition:.35s;
 
-     transform:scale(1.15);
+    text-shadow:0 0 15px rgba(255,122,0,.35);
+
+}
+
+.card:hover i{
+
+    transform:scale(1.15);
+
 }
 
 .card h3{
