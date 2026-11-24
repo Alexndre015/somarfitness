@@ -1,0 +1,835 @@
+/* =====================================================
+   SOMAR FITNESS — AULAS COLETIVAS
+===================================================== */
+
+:root {
+    --aulas-laranja: #ff7900;
+    --aulas-fundo: #0b0b0b;
+    --aulas-card: #171717;
+    --aulas-texto: #f7f7f7;
+}
+
+/* HERO */
+
+.aulas-hero {
+    min-height: 750px;
+    height: 405px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    background:
+        linear-gradient(90deg, rgba(0,0,0,.91) 0%, rgba(0,0,0,.68) 48%, rgba(0,0,0,.30) 100%),
+        linear-gradient(0deg, rgba(0,0,0,.36), rgba(0,0,0,.20)),
+        url("../imagens/tema.png") center 42% / cover no-repeat;
+}
+
+.aulas-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(0,0,0,.35), transparent 78%);
+}
+
+.aulas-hero-conteudo {
+    width: min(1180px, 88%);
+    margin: 0 auto;
+    padding: 75px 0 35px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+.aulas-eyebrow,
+.aulas-kicker {
+    color: var(--aulas-laranja);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: 2.2px;
+}
+
+.aulas-eyebrow i {
+    margin-right: 7px;
+}
+
+.aulas-hero .aulas-hero-conteudo h1 {
+    max-width: 620px;
+    margin: 13px 0 14px;
+    color: #fff;
+    font-size: clamp(3.3rem, 6.2vw, 5.7rem);
+    line-height: .98;
+    font-weight: 800;
+    letter-spacing: -2.5px;
+    text-align: left;
+}
+
+.aulas-hero-conteudo h1 span {
+    display: block;
+    color: var(--aulas-laranja);
+}
+
+.aulas-hero-conteudo p {
+    max-width: 570px;
+    margin: 18px 0 23px;
+    color: #e2e2e2;
+    font-size: .96rem;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.aulas-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.aulas-btn-principal,
+.aulas-btn-secundario {
+    min-height: 46px;
+    padding: 0 23px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 30px;
+    font-size: .82rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .25s ease;
+}
+
+.aulas-btn-principal {
+    background: var(--aulas-laranja);
+    color: #fff;
+}
+
+.aulas-btn-secundario {
+    border: 1px solid var(--aulas-laranja);
+    color: #fff;
+    background: rgba(0,0,0,.35);
+}
+
+.aulas-btn-principal:hover,
+.aulas-btn-secundario:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(255,121,0,.22);
+}
+
+/* ÁREA DAS MODALIDADES */
+
+.aulas-area {
+    width: min(1240px, 94%);
+    margin: 0 auto;
+    padding: 56px 0 64px;
+}
+
+.aulas-cabecalho {
+    text-align: center;
+    margin: 0 auto 28px;
+}
+
+.aulas-cabecalho h2 {
+    margin: 9px 0 7px;
+    color: #fff;
+    font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+    line-height: 1.18;
+    font-weight: 800;
+}
+
+.aulas-cabecalho h2 span {
+    color: var(--aulas-laranja);
+}
+
+.aulas-cabecalho p {
+    margin: 0;
+    color: #aaa;
+    font-size: .88rem;
+}
+
+.aulas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 20px;
+    align-items: stretch;
+}
+
+.aula-card-nova {
+    min-width: 0;
+    min-height: 340px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, .9fr);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,121,0,.32);
+    border-radius: 18px;
+    background: linear-gradient(135deg, #191919, #101010);
+    box-shadow: 0 12px 30px rgba(0,0,0,.22);
+    transition: transform .25s ease, border-color .25s ease;
+}
+
+.aula-card-nova:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255,121,0,.75);
+}
+
+/* IMAGENS */
+
+.aula-imagem,
+.aula-foto-dupla {
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #111;
+}
+
+.aula-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .45s ease;
+}
+
+.aula-card-nova:hover .aula-imagem img,
+.aula-card-nova:hover .aula-foto-metade img {
+    transform: scale(1.04);
+}
+
+/* JUMP — DOIS PROFESSORES */
+
+.aula-foto-dupla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.aula-foto-metade {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.aula-foto-metade img {
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .45s ease;
+}
+
+.aula-foto-metade:first-child img {
+    object-position: 48% center;
+}
+
+.aula-foto-metade:last-child img {
+    object-position: 50% center;
+}
+
+/* SELOS */
+
+.aula-selo {
+    position: absolute;
+    z-index: 3;
+    left: 12px;
+    bottom: 13px;
+    padding: 6px 10px;
+    border-radius: 30px;
+    background: var(--aulas-laranja);
+    color: #fff;
+    font-size: .62rem;
+    font-weight: 800;
+    letter-spacing: .7px;
+}
+
+/* CONTEÚDO DOS CARDS */
+
+.aula-card-conteudo {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px 17px;
+    border-left: 1px solid rgba(255,121,0,.55);
+}
+
+.aula-titulo-linha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.aula-numero {
+    color: #858585;
+    font-size: .55rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.aula-titulo-linha h3 {
+    margin: 4px 0 0;
+    color: var(--aulas-laranja);
+    font-size: 1.45rem;
+    line-height: 1.1;
+}
+
+.aula-titulo-linha > i {
+    color: var(--aulas-laranja);
+    font-size: 1.25rem;
+}
+
+.aula-descricao {
+    margin: 10px 0;
+    color: #c4c4c4;
+    font-size: .76rem;
+    line-height: 1.5;
+}
+
+.aula-card-conteudo h4 {
+    margin: 10px 0 7px;
+    color: #fff;
+    font-size: .75rem;
+}
+
+.aula-card-conteudo h4 i {
+    margin-right: 6px;
+    color: var(--aulas-laranja);
+}
+
+.aula-beneficios {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aula-beneficios li {
+    position: relative;
+    margin: 6px 0;
+    padding-left: 15px;
+    color: #c9c9c9;
+    font-size: .68rem;
+    line-height: 1.4;
+}
+
+.aula-beneficios li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--aulas-laranja);
+    font-weight: 900;
+}
+
+/* HORÁRIOS */
+
+.horarios-aula {
+    display: grid;
+    gap: 6px;
+    margin: 0 0 8px;
+}
+
+.horarios-aula span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 8px 9px;
+    border-radius: 8px;
+    background: rgba(255,255,255,.055);
+}
+
+.horarios-aula b {
+    color: #eee;
+    font-size: .64rem;
+}
+
+.horarios-aula small {
+    color: #ff9638;
+    font-size: .62rem;
+    white-space: nowrap;
+}
+
+.aula-observacao {
+    margin: 0 0 8px;
+    color: #999;
+    font-size: .61rem;
+    line-height: 1.4;
+}
+
+/* BOTÕES */
+
+.btn-aula-nova {
+    min-height: 38px;
+    margin-top: auto;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border-radius: 9px;
+    background: var(--aulas-laranja);
+    color: #fff;
+    font-size: .68rem;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.btn-aula-nova:hover {
+    background: #ff941f;
+    transform: translateY(-2px);
+}
+
+/* CHAMADA FINAL */
+
+.aulas-cta {
+    min-height: 250px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,121,0,.38);
+    border-radius: 18px;
+    background:
+        radial-gradient(circle at 5% 5%, rgba(255,121,0,.13), transparent 55%),
+        linear-gradient(135deg, #1b1b1b, #101010);
+}
+
+.aulas-cta::after {
+    content: "S";
+    position: absolute;
+    right: 15px;
+    bottom: -105px;
+    color: rgba(255,121,0,.055);
+    font-size: 22rem;
+    line-height: 1;
+    font-weight: 800;
+    pointer-events: none;
+}
+
+.aulas-cta > div,
+.aulas-cta > a {
+    position: relative;
+    z-index: 1;
+}
+
+.aulas-cta h2 {
+    margin: 8px 0;
+    color: #fff;
+    font-size: clamp(1.45rem, 2.5vw, 2rem);
+    line-height: 1.2;
+}
+
+.aulas-cta p {
+    margin: 0;
+    color: #aaa;
+    font-size: .82rem;
+}
+
+.aulas-cta > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px 18px;
+    border-radius: 9px;
+    background: var(--aulas-laranja);
+    color: #fff;
+    font-size: .78rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.aulas-cta > a:hover {
+    background: #ff941f;
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .aulas-grid {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .aula-card-nova {
+        min-height: 320px;
+    }
+
+    .aula-imagem img,
+    .aula-foto-metade img {
+        min-height: 320px;
+    }
+
+    .aulas-cta {
+        min-height: 210px;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    .aulas-hero {
+        min-height: 440px;
+        height: auto;
+        background-position: 58% center;
+    }
+
+    .aulas-hero-conteudo {
+        width: 88%;
+        padding: 115px 0 55px;
+    }
+
+    .aulas-hero .aulas-hero-conteudo h1 {
+        font-size: clamp(3rem, 13vw, 4.2rem);
+        letter-spacing: -1.5px;
+    }
+
+    .aulas-hero-conteudo p {
+        max-width: 100%;
+        font-size: .88rem;
+    }
+
+    .aulas-botoes {
+        gap: 9px;
+    }
+
+    .aulas-btn-principal,
+    .aulas-btn-secundario {
+        min-height: 43px;
+        padding: 0 16px;
+        font-size: .74rem;
+    }
+
+    .aulas-area {
+        width: 92%;
+        padding: 48px 0 55px;
+    }
+
+    .aulas-cabecalho {
+        margin-bottom: 25px;
+    }
+
+    .aulas-cabecalho h2 {
+        font-size: 1.8rem;
+    }
+
+    .aulas-cabecalho p {
+        font-size: .78rem;
+    }
+
+    .aulas-grid {
+        gap: 18px;
+    }
+
+    .aula-card-nova {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+
+    .aula-imagem {
+        height: 220px;
+        min-height: 220px;
+    }
+
+    .aula-imagem img {
+        min-height: 220px;
+    }
+
+    .aula-foto-dupla {
+        height: 220px;
+        min-height: 220px;
+    }
+
+    .aula-foto-metade img {
+        min-height: 250px;
+    }
+
+    .aula-card-conteudo {
+        padding: 19px;
+        border-left: 0;
+        border-top: 1px solid rgba(255,121,0,.4);
+    }
+
+    .aula-titulo-linha h3 {
+        font-size: 1.6rem;
+    }
+
+    .aula-descricao {
+        font-size: .82rem;
+    }
+
+    .aula-beneficios li {
+        font-size: .75rem;
+    }
+
+    .horarios-aula b,
+    .horarios-aula small {
+        font-size: .7rem;
+    }
+
+    .btn-aula-nova {
+        min-height: 43px;
+        font-size: .76rem;
+        margin-top: 12px;
+    }
+
+    .aulas-cta {
+        min-height: 0;
+        padding: 25px 21px;
+    }
+
+    .aulas-cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .aulas-cta > a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* ALINHAMENTO DO HERO */
+
+.aulas-hero,
+.aulas-hero .aulas-hero-conteudo,
+.aulas-hero .aulas-hero-conteudo h1,
+.aulas-hero .aulas-hero-conteudo p {
+    text-align: left;
+}
+/* Ajuste do enquadramento das fotos no mobile */
+.aula-imagem img {
+    object-position: center 100%;
+}
+.aula-foto-metade:last-child img {
+    object-position: center 25%;
+}
+/* =====================================================
+   SOMAR FITNESS — AJUSTES FINAIS AULAS COLETIVAS
+===================================================== */
+
+/* HERO */
+.aulas-hero {
+    min-height: 405px;
+    height: auto;
+}
+
+/* GRID DOS CARDS */
+.aulas-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 17px;
+    align-items: stretch;
+}
+
+/* CARDS MAIS COMPACTOS */
+.aula-card-nova {
+    min-height: 320px;
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+    border-radius: 15px;
+}
+
+/* IMAGENS */
+.aula-imagem,
+.aula-foto-dupla {
+    min-width: 0;
+    min-height: 320px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.aula-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* FOTOS DOS PROFESSORES */
+.aula-foto-metade {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.aula-foto-metade img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* AJUSTE INDIVIDUAL DAS FOTOS DO JUMP */
+.aula-foto-metade:first-child img {
+    object-position: 48% center;
+}
+
+.aula-foto-metade:last-child img {
+    object-position: 50% center;
+}
+
+/* REMOVE A LINHA VERTICAL */
+.aula-card-conteudo {
+    min-width: 0;
+    padding: 17px 15px;
+    border-left: none;
+}
+
+/* TÍTULOS */
+.aula-titulo-linha h3 {
+    font-size: 1.32rem;
+}
+
+/* DESCRIÇÕES */
+.aula-descricao {
+    margin: 8px 0;
+    font-size: .73rem;
+    line-height: 1.5;
+}
+
+/* SUBTÍTULOS */
+.aula-card-conteudo h4 {
+    margin: 8px 0 6px;
+    font-size: .72rem;
+}
+
+/* BENEFÍCIOS */
+.aula-beneficios li {
+    margin: 5px 0;
+    font-size: .66rem;
+}
+
+/* HORÁRIOS */
+.horarios-aula {
+    gap: 5px;
+}
+
+.horarios-aula span {
+    padding: 7px 8px;
+}
+
+.horarios-aula b,
+.horarios-aula small {
+    font-size: .61rem;
+}
+
+/* BOTÕES MAIS COMPACTOS */
+.btn-aula-nova {
+    min-height: 34px;
+    padding: 7px 9px;
+    font-size: .64rem;
+    border-radius: 8px;
+}
+
+/* SELOS */
+.aula-selo {
+    left: 10px;
+    bottom: 11px;
+    padding: 5px 9px;
+    font-size: .59rem;
+}
+
+/* TABLETS */
+@media (max-width: 900px) {
+
+    .aulas-grid {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .aula-card-nova {
+        min-height: 310px;
+    }
+
+    .aula-imagem,
+    .aula-foto-dupla,
+    .aula-imagem img,
+    .aula-foto-metade img {
+        min-height: 310px;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+
+    .aulas-hero {
+        min-height: 440px;
+        height: auto;
+        background-position: 58% center;
+    }
+
+    .aulas-grid {
+        gap: 18px;
+    }
+
+    .aula-card-nova {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+
+    .aula-imagem,
+    .aula-foto-dupla {
+        height: 220px;
+        min-height: 220px;
+    }
+
+    .aula-imagem img,
+    .aula-foto-metade img {
+        height: 220px;
+        min-height: 220px;
+    }
+
+    .aula-card-conteudo {
+        padding: 19px;
+        border-left: none;
+        border-top: none;
+    }
+
+    .aula-titulo-linha h3 {
+        font-size: 1.6rem;
+    }
+
+    .aula-descricao {
+        font-size: .82rem;
+    }
+
+    .aula-beneficios li {
+        font-size: .75rem;
+    }
+
+    .horarios-aula b,
+    .horarios-aula small {
+        font-size: .7rem;
+    }
+
+    .btn-aula-nova {
+        min-height: 40px;
+        margin-top: 12px;
+        font-size: .74rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .aula-imagem img,
+    .aula-foto-metade img {
+        object-fit: cover !important;
+        object-position: center 30% !important;
+    }
+
+}
