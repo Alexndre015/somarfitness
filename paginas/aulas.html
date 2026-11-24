@@ -3,335 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" type="image/png" href="logo\1784234903025.png">
-
+    <meta name="description" content="Conheça as aulas coletivas da Somar Fitness em Búzios: Jump, Funcional e Step. Confira horários e participe.">
     <title>Aulas Coletivas | Somar Fitness</title>
-    
+
     <link rel="icon" href="../logo/1784234903025.png" type="image/png">
-
-    <link rel="stylesheet" href="..\css\style.css">
-    <link rel="stylesheet" href="..\css\paginas.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/paginas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="../css/aulas.css">
 </head>
 <body>
 
 <header id="header">
-
-    <!-- Logo -->
-    <a href="#" class="logo">
-        <img src="..\logo\image.png" alt="Somar Fitness">
+    <a href="../index.html" class="logo">
+        <img src="../logo/image.png" alt="Somar Fitness">
     </a>
 
-    <!-- Menu do PC -->
     <nav>
-
         <a href="../index.html">Início</a>
         <a href="../index.html#sobre">Sobre</a>
         <a href="../index.html#diferenciais">Diferenciais</a>
         <a href="../index.html#planos">Planos</a>
         <a href="../index.html#avaliacoes">Avaliações</a>
         <a href="../index.html#contato">Contato</a>
-
     </nav>
 
-    <!-- Redes sociais -->
     <div class="social">
-
-        <a href="https://instagram.com/somarfitness_bz" target="_blank">
+        <a href="https://instagram.com/somarfitness_bz" target="_blank" rel="noopener" aria-label="Instagram">
             <i class="fab fa-instagram"></i>
         </a>
-
-        <a href="https://wa.me/5522999978030" target="_blank">
+        <a href="https://wa.me/5522999978030" target="_blank" rel="noopener" aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
-
     </div>
 
-    <!-- Botão do celular -->
-    <i class="fas fa-bars menu-toggle" id="menuToggle"></i>
-
+    <i class="fas fa-bars menu-toggle" id="menuToggle" aria-label="Abrir menu"></i>
 </header>
 
-<!-- Overlay -->
 <div class="fundo-menu" id="fundoMenu"></div>
 
-<!-- Menu Mobile -->
 <div class="menu-mobile" id="menuMobile">
-
     <div class="menu-mobile-topo">
-
-        <img src="..\logo\image.png" alt="Somar Fitness">
-
+        <img src="../logo/image.png" alt="Somar Fitness">
         <i class="fas fa-times fechar" id="fecharMenu"></i>
-
     </div>
-
-        <a href="../index.html">Início</a>
-        <a href="../index.html#sobre">Sobre</a>
-        <a href="../index.html#diferenciais">Diferenciais</a>
-        <a href="../index.html#planos">Planos</a>
-        <a href="../index.html#avaliacoes">Avaliações</a>
-        <a href="../index.html#contato">Contato</a>
-
-    <a href="https://wa.me/5522999978030?text=Olá! Gostaria de agendar uma aula." class="btn-menu" target="_blank">
-        Agendar Aula
-    </a>
-
+    <a href="../index.html">Início</a>
+    <a href="../index.html#sobre">Sobre</a>
+    <a href="../index.html#diferenciais">Diferenciais</a>
+    <a href="../index.html#planos">Planos</a>
+    <a href="../index.html#avaliacoes">Avaliações</a>
+    <a href="../index.html#contato">Contato</a>
+    <a href="https://wa.me/5522999978030?text=Olá! Gostaria de agendar uma aula." class="btn-menu" target="_blank" rel="noopener">Agendar Aula</a>
     <div class="menu-footer">
-
         <p><i class="fas fa-map-marker-alt"></i> Búzios - RJ</p>
         <p><i class="fab fa-instagram"></i> @somarfitness_bz</p>
         <p><i class="fab fa-whatsapp"></i> (22) 99997-8030</p>
-
     </div>
-
 </div>
 
+<main>
+    <section class="hero aulas-hero">
+        <div class="aulas-hero-overlay"></div>
+        <div class="aulas-hero-conteudo">
+            <span class="aulas-eyebrow"><i class="fa-solid fa-bolt"></i> MOVIMENTO • ENERGIA • RESULTADO</span>
+            <h1>Aulas <span>Coletivas</span></h1>
+            <p>Mais energia para sua rotina, orientação de professores e atividades para movimentar o corpo em um ambiente acolhedor.</p>
+            <div class="aulas-botoes">
+                <a href="https://wa.me/5522999978030?text=Olá! Gostaria de conhecer as aulas coletivas da Somar Fitness." target="_blank" rel="noopener" class="aulas-btn-principal">Agendar uma aula <i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#grade-aulas" class="aulas-btn-secundario">Ver modalidades</a>
+            </div>
+        </div>
+    </section>
 
-<div class="overlay"></div>
-<section class="hero">
-
-    <div class="overlay"></div>
-
-    <div class="conteudo">
-
-        <h1>Aulas Coletivas</h1>
-
-        <p>
-            A academia ideal para quem busca além da musculação, aulas coletivas de qualidade, com professores qualificados e um ambiente acolhedor. Venha conhecer nossas aulas e se surpreender!
-        </p>
-
-        <div class="botoes">
-
-            <a href="https://wa.me/5522999978030" target="_blank" class="btn">
-                Agendar Aula
-            </a>
-
-            <a href="#sobre" class="btn2">
-                Conheça a Academia
-            </a>
-
+    <section class="aulas-area" id="grade-aulas">
+        <div class="aulas-cabecalho">
+            <span class="aulas-kicker">ENCONTRE SUA MODALIDADE</span>
+            <h2>Uma aula para <span>cada objetivo</span></h2>
+            <p>Escolha sua atividade, confira os horários e venha treinar com a gente.</p>
         </div>
 
-    </div>
+        <div class="aulas-grid">
+            <!-- JUMP: dois professores -->
+            <article class="aula-card-nova aula-card-jump">
+                <div class="aula-foto-dupla">
+                    <div class="aula-foto-metade">
+                        <img src="../imagens/ISAJUMP2.jpg" alt="Professora de Jump da Somar Fitness" loading="lazy">
+                    </div>
+                    <div class="aula-foto-metade">
+                        <img src="../imagens/LÉObodyjump.jpg" alt="Professor de Jump da Somar Fitness" loading="lazy">
+                    </div>
+                    <span class="aula-selo">CARDIO</span>
+                </div>
+                <div class="aula-card-conteudo">
+                    <div class="aula-titulo-linha">
+                        <div><span class="aula-numero">01 / MODALIDADE</span><h3>Jump</h3></div>
+                        <i class="fa-solid fa-person-running"></i>
+                    </div>
+                    <p class="aula-descricao">Treino dinâmico no mini trampolim, com música e muita energia.</p>
+                    <h4><i class="fa-solid fa-star"></i> Benefícios</h4>
+                    <ul class="aula-beneficios">
+                        <li>Melhora o condicionamento cardiovascular</li>
+                        <li>Fortalece as pernas e desenvolve equilíbrio</li>
+                        <li>Ajuda a aumentar a resistência física</li>
+                    </ul>
+                    <h4><i class="fa-regular fa-clock"></i> Horários-Matutinos</h4>
+                    <div class="horarios-aula">
+                        <span><b>Quinta-feira</b><small>07:00 às 08:00</small></span>
+                        <span><b>Terça-feira</b><small>07:00 às 08:00</small></span>
+                    </div>
+                    <h4><i class="fa-regular fa-clock"></i> Horários-Vespertino</h4>
+                    <div class="horarios-aula">
+                        <span><b>Segunda-feira</b><small>17:15 às 18:15</small></span>
+                        <span><b>Quinta-feira</b><small>17:15 às 18:15</small></span>
+                    </div>
+                    <a class="btn-aula-nova" href="https://wa.me/5522999978030?text=Olá! Gostaria de participar das aulas de Jump da Somar Fitness." target="_blank" rel="noopener">Quero participar <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </article>
+
+            <article class="aula-card-nova">
+                <div class="aula-imagem">
+                    <img src="../imagens/FUNCIONALISA.jpg" alt="Aula coletiva de treinamento funcional" loading="lazy">
+                    <span class="aula-selo">CORPO INTEIRO</span>
+                </div>
+                <div class="aula-card-conteudo">
+                    <div class="aula-titulo-linha">
+                        <div><span class="aula-numero">02 / MODALIDADE</span><h3>Funcional</h3></div>
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <p class="aula-descricao">Movimentos variados para trabalhar o corpo de forma integrada.</p>
+                    <h4><i class="fa-solid fa-star"></i> Benefícios</h4>
+                    <ul class="aula-beneficios">
+                        <li>Aumenta a força e a mobilidade</li>
+                        <li>Desenvolve equilíbrio e coordenação</li>
+                        <li>Melhora o condicionamento físico</li>
+                    </ul>
+                    <h4><i class="fa-regular fa-clock"></i> Horário</h4>
+                    <div class="horarios-aula">
+                        <span><b>Quarta-feira*</b><small>17:15 às 18:15</small></span>
+                    </div>
+                    <p class="aula-observacao">*A aula normalmente não acontece. Confirme a disponibilidade pelo WhatsApp.</p>
+                    <a class="btn-aula-nova" href="https://wa.me/5522999978030?text=Olá! Gostaria de confirmar a disponibilidade da aula de Funcional." target="_blank" rel="noopener">Consultar disponibilidade <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </article>
+
+            <article class="aula-card-nova">
+                <div class="aula-imagem">
+                    <img src="../imagens/Fabiana.jpg" alt="Aula coletiva de Step" loading="lazy">
+                    <span class="aula-selo">RITMO E ENERGIA</span>
+                </div>
+                <div class="aula-card-conteudo">
+                    <div class="aula-titulo-linha">
+                        <div><span class="aula-numero">03 / MODALIDADE</span><h3>Step</h3></div>
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <p class="aula-descricao">Uma aula animada com sequências coreografadas sobre a plataforma.</p>
+                    <h4><i class="fa-solid fa-star"></i> Benefícios</h4>
+                    <ul class="aula-beneficios">
+                        <li>Estimula o gasto calórico</li>
+                        <li>Fortalece os membros inferiores</li>
+                        <li>Desenvolve coordenação motora e resistência</li>
+                    </ul>
+                    <h4><i class="fa-regular fa-clock"></i> Horário</h4>
+                    <div class="horarios-aula">
+                        <span><b>Sexta-feira</b><small>07:00 às 08:00</small></span>
+                    </div>
+                    <a class="btn-aula-nova" href="https://wa.me/5522999978030?text=Olá! Gostaria de participar das aulas de Step da Somar Fitness." target="_blank" rel="noopener">Quero participar <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </article>
+
+            <aside class="aulas-cta">
+                <div>
+                    <span class="aulas-kicker">BORA COMEÇAR?</span>
+                    <h2>Seu próximo treino pode ser diferente.</h2>
+                    <p>Fale com a equipe e confirme sua participação.</p>
+                </div>
+                <a href="https://wa.me/5522999978030?text=Olá! Quero saber mais sobre as aulas coletivas." target="_blank" rel="noopener">Falar no WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+            </aside>
+        </div>
+    </section>
+</main>
 
-
-</section>
-
-
-
-<section class="aulas">
-
-   <div class="aula-card zumba">
-
-       
-         <div class="aula-foto">
-        <img src="../imagens/Catiazumba.png" alt="Zumba">
-         </div>
-
-          <div class="aula-conteudo">
-
-        <span class="tag">MAIS POPULAR</span>
-
-        <h2>Zumba</h2>
-
-        <p class="categoria">💃 Dança e diversão</p>
-
-        <h3>Benefícios</h3>
-
-        <ul>
-            <li>✔ Alto gasto calórico</li>
-            <li>✔ Coordenação motora</li>
-            <li>✔ Condicionamento físico</li>
-            <li>✔ Reduz o estresse</li>
-            <li>✔ Mais disposição</li>
-        </ul>
-
-        <h3>Horários</h3>
-
-        <p>Sexta-feira - 17:15 às 18:15</p>
-
-        <a class="btn-aula"
-        href="https://wa.me/5522999978030?text=Olá! Gostaria de saber mais sobre as aulas de Zumba.">
-        Quero participar
-        </a>
-
-          </div>
-    
-    </div>
-
-    <div class="aula-card jump">
-
-         <div class="aula-foto">
-        <img src="../imagens/ISAJUMP2.jpg" alt="Jump">
-         </div>
-
-            <div class="aula-conteudo">
-
-        <span class="tag">ALTO GASTO CALÓRICO</span>
-
-        <h2>Jump</h2>
-
-        <p class="categoria">🔥 Cardio</p>
-
-        <h3>Benefícios</h3>
-
-        <ul>
-            <li>✔ Fortalece as pernas</li>
-            <li>✔ Melhora o equilíbrio</li>
-            <li>✔ Saúde cardiovascular</li>
-            <li>✔ Resistência</li>
-            <li>✔ Emagrecimento</li>
-        </ul>
-
-        <h3>Horários</h3>
-
-        <p> Segunda-feira - 17:15 às 18:15</p>
-        <p>  Quarta-feira - 07:00 às 08:00</p>
-
-        <a class="btn-aula"
-        href="https://wa.me/5522999978030?text=Olá! Gostaria de saber mais sobre as aulas de Jump.">
-        Quero participar
-        </a>
-            </div>
-
-    </div>
-
-   <div class="aula-card bodyjump">
-
-         <div class="aula-foto">
-        <img src="../imagens/LÉObodyjump.jpg" alt="Body Jump">
-         </div>
-
-          <div class="aula-conteudo">
-
-        <span class="tag">FORTALECIMENTO</span>
-
-        <h2>Body Jump</h2>
-
-        <p class="categoria">💪 Resistência</p>
-
-        <h3>Benefícios</h3>
-
-        <ul>
-            <li>✔ Tonifica as pernas</li>
-            <li>✔ Trabalha glúteos</li>
-            <li>✔ Melhora o condicionamento</li>
-            <li>✔ Queima gordura</li>
-            <li>✔ Resistência muscular</li>
-        </ul>
-
-        
-        <h3>Horários</h3>
-
-        <p>Segunda-feira - 07:00 às 08:00</p>
-
-
-        <a class="btn-aula"
-        href="https://wa.me/5522999978030?text=Olá! Gostaria de saber mais sobre as aulas de Body Jump.">
-        Quero participar
-        </a>
-
-          </div>
-    </div>
-
-    <div class="aula-card funcional">
-
-         <div class="aula-foto">
-        <img src="../imagens/FUNCIONALISA.jpg" alt="Funcional">
-         </div>
-
-          <div class="aula-conteudo">
-
-    <span class="tag">CORPO INTEIRO</span>
-
-    <h2>Funcional</h2>
-
-    <p class="categoria">⚡ Corpo inteiro</p>
-
-    <h3>Benefícios</h3>
-
-    <ul>
-        <li>✔ Aumenta a força</li>
-        <li>✔ Melhora a mobilidade</li>
-        <li>✔ Desenvolve equilíbrio</li>
-        <li>✔ Melhora o condicionamento físico</li>
-        <li>✔ Auxilia no emagrecimento</li>
-    </ul>
-
-    <h3>Horários</h3>
-
-    <p>Quarta-feira - 17:15 às 18:15</p>
-
-    <a class="btn-aula"
-    href="https://wa.me/5522999978030?text=Olá! Gostaria de saber mais sobre as aulas de Funcional da Somar Fitness.">
-    Quero participar
-    </a>
-    
-          </div>
-</div>
-
-<div class="aula-card hitmix">
-
-     <div class="aula-foto">
-    <img src="../imagens/Fabiana.jpg" alt="Hitmix">
-     </div>
-
-      <div class="aula-conteudo">
-
-    <span class="tag">ALTA INTENSIDADE</span>
-
-    <h2>Hitmos</h2>
-
-    <p class="categoria">🚀 Treino intenso</p>
-
-    <h3>Benefícios</h3>
-
-    <ul>
-        <li>✔ Alto gasto calórico</li>
-        <li>✔ Melhora o condicionamento cardiovascular</li>
-        <li>✔ Aumenta a resistência física</li>
-        <li>✔ Fortalece a musculatura</li>
-        <li>✔ Mais disposição para o dia a dia</li>
-    </ul>
-
-    <h3>Horários</h3>
-
-    <p>Sexta-feira - 7:00 à 8:00</p>
-
-    <a class="btn-aula"
-    href="https://wa.me/5522999978030?text=Olá! Gostaria de saber mais sobre as aulas de Hitmix da Somar Fitness.">
-    Quero participar
-    </a>
-
-      </div>
-
-</div>
-
-
-</section>
-
-    
 <footer>
-
-<h3>Somar FITNESS</h3>
-
-<p>© 2026 Todos os direitos reservados.</p>
-
+    <h3>Somar FITNESS</h3>
+    <p>© 2026 Todos os direitos reservados.</p>
 </footer>
 
-<a href="https://wa.me/5522999978030" class="whats" target="_blank">
-
-<i class="fab fa-whatsapp"></i>
-
+<a href="https://wa.me/5522999978030" class="whats" target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
 </a>
 
-<script src="..\js\script.js"></script>
-
+<script src="../js/script.js"></script>
 </body>
 </html>
